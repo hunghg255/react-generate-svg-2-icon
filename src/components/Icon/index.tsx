@@ -1,0 +1,10 @@
+export { default as IconCalendar } from './IconCalendar';
+export { default as IconAccountBook } from './IconAccountBook';
+export { default as IconAlert } from './IconAlert';
+export { default as IconAlipayCircle } from './IconAlipayCircle';
+export { default as IconAlipaySquare } from './IconAlipaySquare';
+export { default as IconAliwangwang } from './IconAliwangwang';
+export { default as IconAmazonCircle } from './IconAmazonCircle';
+export { default as IconAmazonSquare } from './IconAmazonSquare';
+export { default as IconAndroid } from './IconAndroid';
+export { default as IconReact } from './IconReact';

@@ -1,0 +1,47 @@
+{
+  "name": "react-generate-icon",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "npm run build && vite preview",
+    "lint": "eslint --ext .ts,.tsx src --color",
+    "format": "prettier --write \"./src/**/*.{ts,tsx,json}\"",
+    "prepare": "husky install",
+    "analyze": "npm run lint && tsc && vite build --mode=analyze && source-map-explorer 'dist/assets/*.js'",
+    "g": "node scripts/generate-svg"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rgrove/parse-xml": "^4.1.0",
+    "@total-typescript/ts-reset": "^0.4.2",
+    "@types/node": "^18.11.11",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "@vitejs/plugin-react": "^2.2.0",
+    "eslint": "^8.31.0",
+    "eslint-config-react-app": "^7.0.1",
+    "globby": "^13.1.4",
+    "htmltojsx": "^0.3.0",
+    "husky": "^8.0.0",
+    "install": "^0.13.0",
+    "lint-staged": "^13.1.0",
+    "npm": "^9.6.4",
+    "prettier": "^2.8.2",
+    "sass": "^1.57.1",
+    "source-map-explorer": "^2.5.3",
+    "svgson": "^5.2.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3",
+    "vite-plugin-checker": "^0.5.1",
+    "vite-plugin-environment": "^1.1.3"
+  }
+}

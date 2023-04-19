@@ -1,0 +1,1 @@
+# Generate Icon from Svg
