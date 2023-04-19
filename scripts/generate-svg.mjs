@@ -25,14 +25,13 @@ const generateObjSvg = () => {
 
   const formatChildrenSvg = (children) => {
     const newChildren = [];
+    const childrenPath = children.filter((it) => it.name === 'path');
 
-    for (let idx = 0; idx < children.length; idx++) {
-      const element = children[idx];
-
-      if (element.type === 'text') continue;
+    for (let idx = 0; idx < childrenPath.length; idx++) {
+      const element = childrenPath[idx];
 
       if (element.name === 'path') {
-        if (children.length === 1) delete element.attributes.fill;
+        if (childrenPath.length === 1) delete element.attributes.fill;
         element.children = formatChildrenSvg(element.children);
         newChildren.push(element);
       }
