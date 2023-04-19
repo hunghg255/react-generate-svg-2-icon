@@ -32,7 +32,7 @@ const generateObjSvg = () => {
       if (element.type === 'text') continue;
 
       if (element.name === 'path') {
-        element.attributes.fill && delete element.attributes.fill;
+        if (children.length === 1) delete element.attributes.fill;
         element.children = formatChildrenSvg(element.children);
         newChildren.push(element);
       }

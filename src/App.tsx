@@ -7,6 +7,7 @@ import {
   IconAndroid,
   IconCalendar,
   IconReact,
+  IconStar,
 } from '@/components/Icon';
 import './App.css';
 
@@ -68,6 +69,13 @@ function App() {
         style={{
           fontSize: 50,
           color: 'red',
+        }}
+      />
+
+      <IconStar
+        onClick={() => alert('Hello')}
+        style={{
+          fontSize: 50,
         }}
       />
     </>

@@ -8,3 +8,4 @@ export { default as IconAmazonCircle } from './IconAmazonCircle';
 export { default as IconAmazonSquare } from './IconAmazonSquare';
 export { default as IconAndroid } from './IconAndroid';
 export { default as IconReact } from './IconReact';
+export { default as IconStar } from './IconStar';
