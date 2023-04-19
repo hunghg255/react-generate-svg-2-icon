@@ -6,7 +6,7 @@
 npm i @rgrove/parse-xml globby htmltojsx @rgrove/parse-xml svgson --save-dev
 ```
 
-## 2. Create file scripts/generate-svg.js
+## 2. Create file scripts/generate-svg.mjs
 
 ```js
 // Config path contains svgs and svg component
@@ -19,7 +19,7 @@ const OUTPUT_PATH = './src/components/Icon';
 ```bash
  "scripts": {
     ...
-    "g": "node scripts/generate-svg"
+    "g": "node scripts/generate-svg.mjs"
   },
 ```
 
