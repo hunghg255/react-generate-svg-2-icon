@@ -10,8 +10,8 @@ npm i @rgrove/parse-xml globby htmltojsx @rgrove/parse-xml svgson --save-dev
 
 ```js
 // Config path contains svgs and svg component
-const SOURCE_PATH = './src/assets/svgs';
-const OUTPUT_PATH = './src/components/Icon';
+const PATH_FOLDER_SVGS = 'src/assets/svgs';
+const PATH_FOLDER_ICONS = 'src/components/Icon';
 ```
 
 ## 3. Add script package.json
