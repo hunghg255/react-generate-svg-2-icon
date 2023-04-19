@@ -3,7 +3,7 @@
 ## 1. Install
 
 ```bash
-npm i @rgrove/parse-xml globby htmltojsx @rgrove/parse-xml svgson --save-dev
+npm i @rgrove/parse-xml globby htmltojsx svgson --save-dev
 ```
 
 ## 2. Create file scripts/generate-svg.mjs
