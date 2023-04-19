@@ -9,7 +9,7 @@ npm i @rgrove/parse-xml globby htmltojsx @rgrove/parse-xml svgson --save-dev
 ## 2. Create file scripts/generate-svg.mjs
 
 ```js
-// Config path contains svgs and svg component
+// Config path folder svg file and svg component
 const PATH_FOLDER_SVGS = 'src/assets/svgs';
 const PATH_FOLDER_ICONS = 'src/components/Icon';
 ```
