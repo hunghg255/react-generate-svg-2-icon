@@ -12,7 +12,8 @@
     "format": "prettier --write \"./src/**/*.{ts,tsx,json}\"",
     "prepare": "husky install",
     "analyze": "npm run lint && tsc && vite build --mode=analyze && source-map-explorer 'dist/assets/*.js'",
-    "g": "node scripts/generate-svg.mjs"
+    "g": "node scripts/generate-svg.mjs",
+    "g1": "npx agile-svg2jsx@latest --i src/assets/svgs --o src/components/Icon"
   },
   "dependencies": {
     "react": "^18.2.0",

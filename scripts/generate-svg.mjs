@@ -85,6 +85,12 @@ const generateObjSvg = () => {
 };
 
 const generateIcons = async () => {
+  if (!PATH_FOLDER_SVGS || !PATH_FOLDER_ICONS) {
+    console.log(`\n ⚠️  Generate failed: Missed input or ouput!\n`);
+
+    return;
+  }
+
   const iconsDir = path.join(__dirname, PATH_FOLDER_ICONS);
 
   try {
@@ -94,6 +100,12 @@ const generateIcons = async () => {
   }
 
   const listSvgObj = generateObjSvg();
+
+  if (!listSvgObj.length) {
+    console.log(`\n ⚠️  Can not found svg!\n`);
+
+    return;
+  }
 
   const render = ({ svgIdentifier, content }) => {
     return `
@@ -126,6 +138,8 @@ export default ${svgIdentifier};
     .join('\n');
 
   writeFile(path.resolve(__dirname, `${PATH_FOLDER_ICONS}/index.tsx`), `${entryText}`.trim());
+
+  console.log(`\n🎉 Generate Successfully!\n`);
 };
 
 generateIcons();
