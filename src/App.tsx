@@ -10,6 +10,7 @@ import {
   IconStar,
 } from '@/components/Icon';
 import './App.css';
+import GithubCorners from 'react-gh-corners';
 
 function App() {
   return (
@@ -78,6 +79,8 @@ function App() {
           fontSize: 50,
         }}
       />
+
+      <GithubCorners position='right' href='https://github.com/hunghg255/svg-to-jsx' />
     </>
   );
 }
