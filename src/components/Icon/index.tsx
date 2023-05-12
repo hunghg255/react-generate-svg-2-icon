@@ -9,3 +9,4 @@ export { default as IconAmazonSquare } from './IconAmazonSquare';
 export { default as IconAndroid } from './IconAndroid';
 export { default as IconReact } from './IconReact';
 export { default as IconStar } from './IconStar';
+export { default as IconTimes } from './IconTimes';

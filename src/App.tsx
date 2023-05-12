@@ -8,6 +8,7 @@ import {
   IconCalendar,
   IconReact,
   IconStar,
+  IconTimes,
 } from '@/components/Icon';
 import './App.css';
 import GithubCorners from 'react-gh-corners';
@@ -77,6 +78,14 @@ function App() {
         onClick={() => alert('Hello')}
         style={{
           fontSize: 50,
+        }}
+      />
+
+      <IconTimes
+        onClick={() => alert('Hello')}
+        style={{
+          fontSize: 50,
+          color: 'green',
         }}
       />
 
