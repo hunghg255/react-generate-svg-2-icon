@@ -5,7 +5,10 @@ import {
   IconAliwangwang,
   IconAmazonCircle,
   IconAndroid,
+  IconArrowDown,
   IconCalendar,
+  IconCalendar2,
+  IconCar,
   IconReact,
   IconStar,
   IconTimes,
@@ -78,6 +81,7 @@ function App() {
         onClick={() => alert('Hello')}
         style={{
           fontSize: 50,
+          color: 'yellowgreen',
         }}
       />
 
@@ -86,6 +90,30 @@ function App() {
         style={{
           fontSize: 50,
           color: 'green',
+        }}
+      />
+
+      <IconArrowDown
+        onClick={() => alert('Hello')}
+        style={{
+          fontSize: 50,
+          color: 'green',
+        }}
+      />
+
+      <IconCalendar2
+        onClick={() => alert('Hello')}
+        style={{
+          fontSize: 50,
+          color: 'violet',
+        }}
+      />
+
+      <IconCar
+        onClick={() => alert('Hello')}
+        style={{
+          fontSize: 50,
+          color: 'dodgerblue',
         }}
       />
 
